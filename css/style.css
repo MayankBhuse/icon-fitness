@@ -1,0 +1,460 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+	overflow-x: hidden;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+header{
+	background-image: url('../4.webp');
+	background-color:black;
+	background-size: cover;
+	height: 100vh;
+}
+/* Navigation-bar */
+nav{
+	width: 100%;
+	margin: auto;
+	position: fixed;
+	text-align: center;
+	height: auto;
+	background-color: rgb(8, 8, 8);
+	margin-top: 0;
+}
+.navbar{
+	position: relative;
+	box-shadow: 0 15px 6px rgba(2, 2, 2, 0.3), 0 0 40px rgba(3, 3, 3, 0.1) inset;
+}
+.navbar::before,
+.navbar::after{
+	content: '';
+	position: absolute;
+	z-index: -1;
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	top: 50%;
+	bottom: 0;
+	left: 20px;
+	right: 20px;
+	border-radius: 100px / 10px;
+}
+.collapse ul li a{
+	font-size: 18px;
+}
+.navbar-band img{
+	float: right;
+	width: 125px;
+	height: auto;
+}
+/* Home */
+.paragraph{
+	top: 40%;
+	left: 5%;
+	position: absolute;
+	text-align: left;
+	color: #98821A;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+.paragraph h1{
+	font-size: 5vw;
+	text-align: left;
+	
+}
+.paragraph p{
+	text-align: left;
+	font-size: 1.3vw;
+	width: 900px;
+	opacity: 0;
+}
+.slide-left{
+	animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+	0%{
+		transform: translate(100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px);
+		opacity: 1;
+	}
+	
+}
+.paragraph p.slide-left{
+	animation-delay: 1s;
+}
+.row1{
+	background-color: lavender;
+}
+.row1 h1{
+	position: relative;
+	text-align:center;
+	font-size: 4vw;
+	color:#98821A;
+}
+.yellow {
+	font-size:1vw;
+	background-color: #ffff00;
+	text-align: center;
+	position: relative;
+	border: 1px solid;
+	border-radius: 10px;
+	left: 5%;
+	width: 7%;
+}
+.weight{
+	position:relative;
+	left: 20%;
+	top: -5vw;
+	font-size:1vw;
+}
+.Plates{
+	position: relative;
+	left: 20%;
+	top: -5vw;
+	font-size:1vw;
+}
+.Cardio{
+	position: relative;
+	left: 20%;
+	top: -5vw;
+	font-size:1vw;
+}
+.Steam{
+	position: relative;
+	left: 20%;
+	top: -4vw;
+	font-size:1vw;
+}
+.blue {
+	font-size:1vw;
+	background-color: #00FFFF;
+	text-align: center;
+	position: relative;
+	border: 1px solid black;
+	border-radius: 10px;
+	left: 5%;
+	width: 7%;
+}
+.yellows{
+	font-size:1vw;
+	background-color: #ffff00;
+	text-align: center;
+	position: relative;
+	border: 1px solid black;
+	border-radius: 10px;
+	left: 53%;
+	top:-35vw ;
+	width: 7%;
+}
+.Environment{
+	position:relative;
+	left: 65%;
+	top: -38.5vw;
+	font-size:1vw;
+}
+.Cleanliness{
+	position:relative;
+	left: 65%;
+	top: -37.1vw;
+	font-size:1vw;
+}
+.tv{
+	position:relative;
+	left: 65%;
+	top: -37.8vw;
+	font-size:1vw;
+}
+.Trainer{
+	position:relative;
+	left: 65%;
+	top: -38vw;
+	font-size:1vw;
+}
+.blues{
+	font-size:1vw;
+	background-color: #00FFFF;
+	text-align: center;
+	position: relative;
+	border: 1px solid black;
+	border-radius: 10px;
+	left: 53%;
+	top:-35vw ;
+	width: 7%;
+}
+/* Service */
+.Strength-Training{
+	background-color: black;
+	height: 100vh;
+	overflow-y: hidden;
+}
+.Strength-images{
+	width: 35vw;
+	height:100vh;
+	size: 40%;
+}
+.Strength{
+	left:38%;
+	color: #98821A;
+	font-size: 1.5vw;
+	position: relative;
+	top: -45vw;
+}
+.Benefits{
+	font-size: 1.5vw;
+	color: #98821A;
+	position: relative;
+	left: 70%;
+	top: -56.9vw;
+}
+.exercise{
+	position: relative;
+	font-size:1vw;
+	color: white;
+	left:38%;
+	top: -45vw;
+}
+.Fat{
+	position: relative;
+	font-size:1vw;
+	color: white;
+	left:70%;
+	top: -57vw;
+}
+.Offering{
+	font-size: 1.5vw;
+	color: #98821A;
+	position: relative;
+	left: 15%;
+	text-align: center;
+	top: -50vw;
+}
+.building{
+	position: relative;
+	font-size:1vw;
+	color: white;
+	left: 58%;
+	top: -50vw;
+}
+.Cardio-Training{
+	background-color: black;
+}
+.Strength-text{
+	font-size: 3vw;
+	color: #98821A;
+	position: relative;
+	left: 15%;
+	text-align: center;
+	top: -44.7vw;
+}
+.Cardio-images{
+	float: right;
+	width: 42vw;
+	height:auto;
+	size: 40%;
+}
+.Cardio-text{
+	font-size: 3vw;
+	color: #98821A;
+	text-align: center;
+	position: relative;
+}
+.Vascular{
+	font-size: 1.5vw;
+	color: #98821A;
+	position: relative;
+	left: 2%;
+	top: 1vw;
+}
+.heart{
+	color: white;
+	position: relative;
+	top: 1vw;
+	left:2%
+}
+.Training{
+	font-size: 1.5vw;
+	color: #98821A;
+	position: relative;
+	left: 30%;
+	top: -5.9vw;
+}
+.stronger{
+	color: white;
+	position: relative;
+	left:30%;
+	top: -5.9vw
+}
+.What{
+	color: #98821A;
+	position: relative;
+	left:20%;
+	font-size: 1.5vw;
+	top: -3vw;
+}
+.international{
+	color: white;
+	position: relative;
+	top: -2.5vw;
+	left: 20%;
+}
+.Cross-Training{
+	background-color: #000000;
+}
+.Cross-images{
+	float: left;
+	width: 40vw;
+	height:auto;
+}
+.Cross-text{
+	position: relative;
+	font-size: 3vw;
+	color: #98821A;
+	float: right;
+	bottom: 1vw;
+	right: 5%;
+}
+.Functional{
+	position: relative;
+	float: right;
+	right: 11%;
+	top: 5vw;
+	font-size: 1.5vw;
+	color: #98821A;
+}
+.Rather{
+	color: #ffffff;
+	float: right;
+	right: 5vw;
+	top: 3vw;
+	font-size: 1vw;
+	position: relative;
+}
+.Nutritional{
+	background-color: #000000;
+}
+.Nutritional-images{
+	float: right;
+	width: 34vw;
+	height:auto;
+}
+.Nutritional-text{
+	position: relative;
+	color: #98821A;
+	left: 3%;
+	top: 2vw;
+}
+.required{
+	position: relative;
+	color: #98821A;
+	font-size: 1.5vw;
+	left: 3%;
+	top: 3vw;
+}
+.workout{
+	position: relative;
+	color: #ffffff;
+	font-size: 1vw;
+	top: 3vw;
+	left: 3%;
+}
+.Massage{
+	background-color: #000000;
+}
+.Massage-images{
+	float: left;
+	width: 34vw;
+	height:auto;
+}
+.Massage-text{
+	color: #98821A;
+	position: relative;
+	left: 5%;
+}
+.Do{
+	color: #98821A;
+	position: relative;
+	left: 5%;
+	top: 1vw;
+	font-size: 1.5vw;
+}
+.tissue{
+	color: #ffffff;
+	position: relative;
+	top: 1vw;
+	font-size: 1vw;
+	left: 5%;
+}
+
+/* Sucess Stories */
+.Sucess-Stories{
+	position: relative;
+	top: 5vw;
+	background-color: #000000;
+}
+.w3-content{
+	height: auto;
+	padding: 0 8px;
+	width: 100%;
+}
+
+
+
+/* Contact */
+.Contact{
+	position: relative;
+	top: 10vw;
+	background-color: #000000;
+	background-size: cover;
+}
+.Contact-text{
+	color: #98821A;
+	position: relative;
+	left: 5%;
+	font-size: 1.5vw;
+}
+.Rohini{
+	color: #98821A;
+	position: relative;
+	left: 5%;
+	font-size: 1vw;
+}
+.Opening-text{
+	color: #98821A;
+	position: relative;
+	left: 1%;
+	font-size: 1.5vw;
+}
+.Hours{
+	color: #98821A;
+	position: relative;
+	left: 5%;
+	font-size: 1vw;
+}
+.maplink{
+	width:600px; 
+	height:450px;
+	border:0;
+}
+.form{
+	position: relative;
+	float: right;
+	right: 45%;
+}
+.addmission_form{
+	background-color: rgb(143, 16, 80);
+}
+.addmission_form li a{
+	color: rgb(178, 196, 15);
+	text-decoration: none;
+	font-size: 1vw;
+}
+ul li a:hover{
+	background-color:rgb(143, 16, 80);
+	color:#ffffff;
+}
